@@ -12,11 +12,9 @@ public class Vehicle {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     long userId;
     String userName;
-    String emailAddress;
-    String password;
-    String confirmPassword;
     String services;
     String type;
+    String date;
     public long getUserId() {
         return userId;
     }
@@ -29,24 +27,7 @@ public class Vehicle {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-    public String getEmailAddress() {
-        return emailAddress;
-    }
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
-    }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    public String getConfirmPassword() {
-        return confirmPassword;
-    }
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
-    }
+    
     public String getServices() {
         return services;
     }
@@ -58,6 +39,12 @@ public class Vehicle {
     }
     public void setType(String type) {
         this.type = type;
+    }
+    public String getDate() {
+        return date;
+    }
+    public void setDate(String date) {
+        this.date = date;
     }
     
 }
